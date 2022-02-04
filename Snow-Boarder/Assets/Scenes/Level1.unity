@@ -7573,7 +7573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -915.30194, y: 150.39, z: -57.509995}
+  m_LocalPosition: {x: -915.0264, y: 150.39, z: -57.509995}
   m_LocalScale: {x: 1.4420401, y: 1.796313, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7765,6 +7765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueAmount: 17.5
+  baseSpeed: 16
+  boostSpeed: 25
 --- !u!1 &549246952
 GameObject:
   m_ObjectHideFlags: 0
@@ -8143,7 +8145,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.419214, y: 1}
+    m_SensorSize: {x: 2.5294118, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8160,7 +8162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608894664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -915.30194, y: 150.39, z: -57.509995}
+  m_LocalPosition: {x: -915.0264, y: 150.39, z: -57.509995}
   m_LocalScale: {x: 2.1149523, y: 1.7296, z: 1}
   m_Children:
   - {fileID: 730636072}
