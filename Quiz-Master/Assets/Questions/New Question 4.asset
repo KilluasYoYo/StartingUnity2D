@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c98cd98c09acc44b363a9eb6b81f8f, type: 3}
   m_Name: New Question 4
   m_EditorClassIdentifier: 
-  question: What's the biggest animal in the world?
+  question: "What is the smallest country in the world?\r"
+  answers:
+  - Turkey
+  - USA
+  - Vatican City
+  - Russia
+  correctAnswerIndex: 2

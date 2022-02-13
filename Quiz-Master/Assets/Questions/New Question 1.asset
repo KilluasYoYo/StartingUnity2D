@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: New Question 1
   m_EditorClassIdentifier: 
   question: "What does He stand for on the periodic table?\r"
+  answers:
+  - Helium
+  - Hydrogine
+  - Carbon
+  - Litium
+  correctAnswerIndex: 0

@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: New Question 3
   m_EditorClassIdentifier: 
   question: "Who painted the Mona Lisa?\r"
+  answers:
+  - Leonardo Da Vinci
+  - Vincent Van Gogh
+  - Michelangelo
+  - Picasso
+  correctAnswerIndex: 0

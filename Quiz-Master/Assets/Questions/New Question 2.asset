@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: New Question 2
   m_EditorClassIdentifier: 
   question: "What fruit takes the scientific name Mangifera indica?\r"
-  Answers:
-  - int num = 12;
-  - int num = 12;
-  - int num = 12;
-  - int num = 12;
-  correctAnswerIndex: 0
+  answers:
+  - Banana
+  - Apple
+  - Mango
+  - Strawberry
+  correctAnswerIndex: 2

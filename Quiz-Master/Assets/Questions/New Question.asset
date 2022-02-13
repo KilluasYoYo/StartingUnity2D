@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: New Question
   m_EditorClassIdentifier: 
   question: What's the biggest animal in the world?
-  Answers:
-  - whale
-  - whale
-  - whale
-  - whale
-  correctAnswerIndex: 0
+  answers:
+  - Elephant
+  - Whale
+  - Bat
+  - Giraffe
+  correctAnswerIndex: 1

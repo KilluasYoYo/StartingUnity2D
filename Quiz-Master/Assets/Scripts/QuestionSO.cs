@@ -8,20 +8,20 @@ public class QuestionSO : ScriptableObject
 {
     [TextArea(2,6)]
     [SerializeField] string question = "Type your new question text here";
-    [SerializeField] string[] Answers = new string[4];
+    [SerializeField] string[] answers = new string[4];
     [SerializeField] int correctAnswerIndex;
+
     public string Getquestion()
     {
         return question;
     }
-
-    public int GetCorrectAnswer()
+    public string GetAnswer(int index)
+    {
+        return answers[index];
+    }
+    public int GetCorrectAnswerIndex()
     {
         return correctAnswerIndex;
     }
 
-    public string getAnswer(int index)
-    {
-        return Answers[index];
-    }
 }
