@@ -5,10 +5,10 @@
  
 <h3 style="padding-left: 25px">List Of Projects:</h3>
 
-- Delivery Driver (done)
+- Delivery Driver (Done)
 - Snow Boarder (Done)
-- Quiz Master (In ptogress)
-- TileVania
+- Quiz Master (Done)
+- TileVania (In Progress)
 - Laser Defender
 <hr />
 
