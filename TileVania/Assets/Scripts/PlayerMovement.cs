@@ -7,13 +7,17 @@ public class PlayerMovement : MonoBehaviour
     Animator myAnimator;
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
-
+    CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float runSpeed;
+    [SerializeField] float jumpSpeed = 5f;
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
     }
+
+
 
 
     void Update()
@@ -26,6 +30,28 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = value.Get<Vector2>();
         Debug.Log("Move Input");
+    }
+
+    // One more way to prevent double jump:
+    /*
+    bool isTouchingGround;
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        isTouchingGround = true;   
+    }
+    void OnCollisionExit2D(Collision2D other) 
+    {
+        isTouchingGround = false;    
+    }
+    -> Add isTouchingGround to if statement in OnJump() with && operator.
+    */
+
+    void OnJump(InputValue value)
+    {
+        if(value.isPressed && myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            myRigidbody.velocity += new Vector2(0f, jumpSpeed);
+        }
     }
 
     void Run()
