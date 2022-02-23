@@ -28966,6 +28966,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 494168001181709710, guid: 5ef8ed5e4c03763418f5c7a67d228ed0, type: 3}
+      propertyPath: deathKick.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 494168001181709710, guid: 5ef8ed5e4c03763418f5c7a67d228ed0, type: 3}
+      propertyPath: deathKick.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 494168001874878273, guid: 5ef8ed5e4c03763418f5c7a67d228ed0, type: 3}
       propertyPath: m_Name
       value: CHOCHO (Player)
@@ -29033,6 +29041,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1181132815, guid: 0cbf67bda83202e4cb3f2c99b9df1ab6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.016902924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181132815, guid: 0cbf67bda83202e4cb3f2c99b9df1ab6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.35445595
+      objectReference: {fileID: 0}
     - target: {fileID: 149909984656865508, guid: 0cbf67bda83202e4cb3f2c99b9df1ab6, type: 3}
       propertyPath: m_Enabled
       value: 1
