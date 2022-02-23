@@ -18,8 +18,8 @@ TagManager:
   - Background
   - Bouncing
   - Enemy
-  - 
-  - 
+  - Hazard
+  - Bullet
   - 
   - 
   - 
@@ -56,6 +56,9 @@ TagManager:
     locked: 0
   - name: Water
     uniqueID: 1199129519
+    locked: 0
+  - name: Hazard
+    uniqueID: 2668740085
     locked: 0
   - name: Enemy
     uniqueID: 1695406695

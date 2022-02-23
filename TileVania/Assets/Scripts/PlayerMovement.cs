@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed =5f;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     float defaultGravityScale;
     float climbingGravityScale = 0f;
     bool hasClimbing;
@@ -36,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Die();
+    }
+
+    void OnFire(InputValue value)
+    {
+        if(!isAlive) { return; }
+        Instantiate(bullet, gun.position, gun.rotation);
     }
 
     void OnMove(InputValue value)
@@ -67,8 +75,6 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
     }
-
-
 
     void Run()
     {
@@ -124,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Die()
     {
-        if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazard")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
