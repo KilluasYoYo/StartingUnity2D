@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if(!isAlive) { return; };
         moveInput = value.Get<Vector2>();
-        Debug.Log("Move Input");
     }
 
     // One more way to prevent double jump:
@@ -135,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
+            FindObjectOfType<GameSession>().processPlayerDeath();
         }
     }
 }
