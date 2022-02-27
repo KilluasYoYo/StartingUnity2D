@@ -8,8 +8,8 @@
 - Delivery Driver (Done)
 - Snow Boarder (Done)
 - Quiz Master (Done)
-- TileVania (In Progress)
-- Laser Defender
+- TileVania (Done)
+- Laser Defender(In Progress)
 <hr />
 
 #### ! I made these projects with unity 2021.1
