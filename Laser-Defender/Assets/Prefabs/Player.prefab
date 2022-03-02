@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737264223}
   - component: {fileID: 1737264224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: playerShip3_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 810719b2699cefa45b76c12d566e327e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,10 @@ GameObject:
   - component: {fileID: 4941810765532366843}
   - component: {fileID: 6491920405299297229}
   - component: {fileID: 5841702855035133087}
-  m_Layer: 0
+  - component: {fileID: 740760618121531776}
+  - component: {fileID: 5262712084236324723}
+  - component: {fileID: 106451904099984856}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,3 +166,53 @@ MonoBehaviour:
   pendingLeft: 0.5
   pendingTop: 5
   pendingBottom: 2
+--- !u!50 &740760618121531776
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4941810765532366840}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &5262712084236324723
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4941810765532366840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.002396971, y: -0.021572828}
+  serializedVersion: 2
+  m_Radius: 0.40412113
+--- !u!114 &106451904099984856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4941810765532366840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e172df209686a51489457333d650c8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50

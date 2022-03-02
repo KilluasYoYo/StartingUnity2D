@@ -411,6 +411,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1f63152e4252fa845bd8584140096411, type: 2}
   currentWave: {fileID: 11400000, guid: 03b3da6e9ff9dd54ab108e097bb53cb7, type: 2}
   timeBetweenWaves: 2
+  isLooping: 0
 --- !u!4 &1896381590
 Transform:
   m_ObjectHideFlags: 0
@@ -432,6 +433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1737264223, guid: 7948947aa8d69da4b9f3a57779af4147, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4941810765532366840, guid: 7948947aa8d69da4b9f3a57779af4147, type: 3}
       propertyPath: m_Name
       value: Player
@@ -442,11 +447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941810765532366843, guid: 7948947aa8d69da4b9f3a57779af4147, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 4941810765532366843, guid: 7948947aa8d69da4b9f3a57779af4147, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -3.86
       objectReference: {fileID: 0}
     - target: {fileID: 4941810765532366843, guid: 7948947aa8d69da4b9f3a57779af4147, type: 3}
       propertyPath: m_LocalPosition.z
