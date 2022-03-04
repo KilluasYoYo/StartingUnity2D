@@ -26,7 +26,6 @@ public class PathFinder : MonoBehaviour
     {
         FollowPath();
     }
-
     void FollowPath()
     {
         if(waypointIndex < waypoints.Count)
