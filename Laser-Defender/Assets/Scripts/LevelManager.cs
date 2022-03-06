@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour
     }
     public void LoadGameOver()
     {
-        WaitAndLoad("GameOver",delay);
+      StartCoroutine(WaitAndLoad(2,delay));
     }
     public void QuitGame()
     {
@@ -23,10 +23,10 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
-    IEnumerator WaitAndLoad(string scene, float delay)
+    IEnumerator WaitAndLoad(int sceneIndex, float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("scene");
+        SceneManager.LoadScene(sceneIndex);
     }
 
 }

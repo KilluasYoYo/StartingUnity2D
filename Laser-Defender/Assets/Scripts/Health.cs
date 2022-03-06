@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
             PlayHitEffect();
             audioPlayer.PlayExplosionClip();
             ShakeCamera();
-            damageDealer.Hit();
+        //    damageDealer.Hit();
         }  
 
     }
@@ -58,7 +58,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    void PlayHitEffect()
+   void PlayHitEffect()
     {
         if(hitEffect != null)
         {

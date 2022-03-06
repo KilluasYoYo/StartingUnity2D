@@ -17,8 +17,7 @@ public class UIDisplay : MonoBehaviour
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-    //    scoreKeeper = GameObject.Find("Player").GetComponent<ScoreKeeper>();
-
+    //scoreKeeper = GameObject.Find("ScoreKeeper").GetComponent<ScoreKeeper>();
     }
 
     void Start()
