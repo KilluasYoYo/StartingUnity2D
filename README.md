@@ -9,7 +9,7 @@
 - Snow Boarder (Done)
 - Quiz Master (Done)
 - TileVania (Done)
-- Laser Defender(In Progress)
+- Laser Defender(Done)
 <hr />
 
 #### ! I made these projects with unity 2021.1
